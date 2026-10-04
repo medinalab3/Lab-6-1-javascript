@@ -6,6 +6,10 @@
 body {
     font-family: "Poppins", Arial, sans-serif;
     background-color: #0d1117;
+    /* Imagen de fondo: patrón SVG que se repite en mosaico */
+    background-image: url("imagenes/fondo.svg");
+    background-repeat: repeat;
+    background-attachment: fixed;
     color: #e6edf3;
     margin: 0;
     padding: 0 16px 40px;
