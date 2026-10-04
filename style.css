@@ -93,6 +93,23 @@ code {
     font-size: 0.9rem;
 }
 
+figure {
+    margin: 16px 0 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #21262d;
+    border-radius: 6px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #9aa4af;
+}
+
 input[type="number"] {
     font-family: inherit;
     padding: 6px 10px;

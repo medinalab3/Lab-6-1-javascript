@@ -53,11 +53,14 @@ ARCHIVOS INCLUIDOS
                   seis conceptos, comentado en detalle.
 - style.css   -> Hoja de estilos propia (selectores, modelo de caja y
                   ajustes responsivos).
+- imagenes/   -> Carpeta con consola.png, una captura de la consola del
+                  navegador con la salida de los ejercicios (se muestra al
+                  final de la página dentro de un <figure>).
 - README.txt  -> Este archivo.
 
 ENLACE DEL REPOSITORIO DE GITHUB
 ---------------------------------
-https://github.com/medinalab3/Lab-6-1-javascript
+https://github.com/medinalab3/laboratorio-javascript
 
 CÓMO VISUALIZAR Y PROBAR EL PROYECTO
 ---------------------------------------
