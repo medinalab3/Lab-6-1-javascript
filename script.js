@@ -64,9 +64,9 @@ document.getElementById("btn-variables").addEventListener("click", function () {
 // también puedan usarlo.
 let estudiantes = [
     { nombre: "Gerardo Medina", nota: 92 },
-    { nombre: "Ana Torres", nota: 78 },
-    { nombre: "Luis Rivera", nota: 65 },
-    { nombre: "Carla Díaz", nota: 88 }
+    { nombre: "Hinata Uzumaki", nota: 78 },
+    { nombre: "Luis Quirindongo", nota: 65 },
+    { nombre: "Carla Ortiz", nota: 88 }
 ];
 
 document.getElementById("btn-arreglos").addEventListener("click", function () {
@@ -80,7 +80,7 @@ document.getElementById("btn-arreglos").addEventListener("click", function () {
 
     // Manipulación de un objeto: se modifica la nota de un estudiante existente
     estudiantes[1].nota = 80;
-    console.log("Nota de Ana Torres actualizada:", estudiantes[1]);
+    console.log("Nota de Hinata Uzumaki actualizada:", estudiantes[1]);
 
     // Recorrer el arreglo con forEach() y mostrar cada objeto en la página
     const lista = document.getElementById("salida-arreglos");
