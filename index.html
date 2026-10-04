@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+  Nombre: Gerardo J. Medina (GJ)
+  Universidad: Northbridge University
+  Curso: NCBTO - 2026-5CC - WADE 1000L - 3663ONL
+  Numero de estudiante: 2507056253
+  Laboratorio: Fundamentos de JavaScript (variables, tipos de datos,
+               arreglos, objetos, estructuras de control, bucles,
+               funciones, alcance y clausuras).
+  Descripción: Página HTML5 que enlaza un archivo JavaScript externo
+               (script.js) mediante la etiqueta <script>. Cada sección
+               de esta página corresponde a un concepto distinto de
+               JavaScript, con un botón que ejecuta el código y muestra
+               el resultado tanto en la página como en la consola del
+               navegador (F12).
+-->
+<html lang="es" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de JavaScript | GJ Medina</title>
+
+    <!-- Google Fonts para personalizar la tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+
+    <!-- Mi propio CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SEMÁNTICA HTML: <header> con el título principal de la página -->
+    <header class="text-center">
+        <h1>Laboratorio de JavaScript</h1>
+        <p class="lead">Variables, tipos de datos, arreglos, objetos, control de flujo, funciones, alcance y clausuras.</p>
+        <p class="aviso">Abre la consola del navegador (F12 → pestaña "Console") para ver toda la salida de cada ejercicio.</p>
+    </header>
+
+    <!-- SEMÁNTICA HTML: <main> contiene el contenido único de la página -->
+    <main>
+
+        <!--
+          SECCIÓN 1: Variables, salida de información y tipos de datos.
+          SELECTOR DE ID: id="seccion-variables" para el CSS propio.
+        -->
+        <section id="seccion-variables" class="tarjeta">
+            <h2>1. Variables, salida de datos y tipos de dato</h2>
+            <p>Declara variables con <code>let</code> y <code>const</code>, usando distintos tipos de dato (string, number, boolean, array, object), y las imprime en pantalla y en consola.</p>
+            <button class="btn" id="btn-variables">Ejecutar</button>
+            <pre id="salida-variables" class="salida"></pre>
+        </section>
+
+        <!--
+          SECCIÓN 2: Arreglos y objetos.
+        -->
+        <section id="seccion-arreglos" class="tarjeta">
+            <h2>2. Arreglos y objetos</h2>
+            <p>Crea un arreglo de objetos (estudiantes con nombre y nota), lo recorre, y agrega/modifica elementos dinámicamente.</p>
+            <button class="btn" id="btn-arreglos">Ejecutar</button>
+            <ul id="salida-arreglos" class="salida-lista"></ul>
+        </section>
+
+        <!--
+          SECCIÓN 3: Estructuras de control condicionales.
+        -->
+        <section id="seccion-condicionales" class="tarjeta">
+            <h2>3. Estructuras de control (if / else if / else)</h2>
+            <p>Ingresa una nota del 0 al 100 y el programa decide la letra correspondiente usando <code>if</code>, <code>else if</code> y <code>else</code>.</p>
+            <label for="input-nota">Nota (0-100):</label>
+            <input type="number" id="input-nota" min="0" max="100" value="85">
+            <button class="btn" id="btn-condicionales">Evaluar</button>
+            <p id="salida-condicionales" class="salida-corta"></p>
+        </section>
+
+        <!--
+          SECCIÓN 4: Bucles (for, while, do...while).
+        -->
+        <section id="seccion-bucles" class="tarjeta">
+            <h2>4. Bucles (for, while, do...while)</h2>
+            <p>Recorre el mismo arreglo de estudiantes de tres formas distintas para calcular el promedio del grupo.</p>
+            <button class="btn" id="btn-bucles">Ejecutar</button>
+            <pre id="salida-bucles" class="salida"></pre>
+        </section>
+
+        <!--
+          SECCIÓN 5: Funciones.
+        -->
+        <section id="seccion-funciones" class="tarjeta">
+            <h2>5. Funciones</h2>
+            <p>Define funciones (declarada y flecha) para tareas específicas: calcular el promedio y encontrar al estudiante con la nota más alta.</p>
+            <button class="btn" id="btn-funciones">Ejecutar</button>
+            <pre id="salida-funciones" class="salida"></pre>
+        </section>
+
+        <!--
+          SECCIÓN 6: Alcance (scope) y clausuras (closures).
+        -->
+        <section id="seccion-clausuras" class="tarjeta">
+            <h2>6. Alcance (scope) y clausuras (closures)</h2>
+            <p>Demuestra la diferencia de alcance entre <code>var</code>/<code>let</code> dentro de un bucle, y un contador creado con una clausura que "recuerda" su propio valor entre llamadas.</p>
+            <button class="btn" id="btn-clausuras">Ejecutar</button>
+            <pre id="salida-clausuras" class="salida"></pre>
+        </section>
+
+    </main>
+
+    <!-- SEMÁNTICA HTML: <footer> con información del pie de página -->
+    <footer class="text-center">
+        <p>&copy; 2026 Gerardo J. Medina. Proyecto académico — Northbridge University.</p>
+    </footer>
+
+    <!--
+      ENLACE AL ARCHIVO JAVASCRIPT EXTERNO mediante la etiqueta <script>.
+      Se coloca al final del <body> para que el HTML ya esté cargado
+      antes de que el script busque los elementos por su id.
+    -->
+    <script src="script.js"></script>
+</body>
+</html>

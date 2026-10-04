@@ -1,0 +1,123 @@
+/* ==========================================================
+   LABORATORIO DE JAVASCRIPT - GJ Medina
+   ========================================================== */
+
+/* 1. SELECTOR DE ELEMENTO */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background-color: #0d1117;
+    color: #e6edf3;
+    margin: 0;
+    padding: 0 16px 40px;
+}
+
+header {
+    padding: 40px 10px 20px;
+}
+
+h1 {
+    color: #10b981;
+}
+
+code {
+    background-color: #161b22;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: "Fira Code", monospace;
+    color: #79c0ff;
+}
+
+/* 2. SELECTOR DE ID */
+#seccion-variables {
+    border-left: 4px solid #10b981;
+}
+
+/* 3. SELECTORES DE CLASE */
+.aviso {
+    font-size: 0.9rem;
+    color: #f59e0b;
+}
+
+/*
+   MODELO DE CAJA: la clase "tarjeta" define el padding, el borde y
+   la sombra de cada sección, dentro de un ancho máximo centrado.
+*/
+.tarjeta {
+    box-sizing: border-box;
+    max-width: 800px;
+    margin: 0 auto 24px;
+    padding: 24px;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    background-color: #161b22;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    background-color: #10b981;
+    color: #0d1117;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.btn:hover {
+    background-color: #0ea371;
+    transform: translateY(-2px);
+}
+
+.salida,
+.salida-corta {
+    margin-top: 16px;
+    padding: 14px;
+    background-color: #0d1117;
+    border: 1px solid #21262d;
+    border-radius: 6px;
+    font-family: "Fira Code", monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    min-height: 20px;
+}
+
+.salida-lista {
+    margin-top: 16px;
+    padding: 14px 14px 14px 32px;
+    background-color: #0d1117;
+    border: 1px solid #21262d;
+    border-radius: 6px;
+    font-family: "Fira Code", monospace;
+    font-size: 0.9rem;
+}
+
+input[type="number"] {
+    font-family: inherit;
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #21262d;
+    background-color: #0d1117;
+    color: #e6edf3;
+    margin: 0 10px;
+    width: 80px;
+}
+
+footer {
+    text-align: center;
+    color: #9aa4af;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* 4. AJUSTES RESPONSIVOS */
+@media (max-width: 576px) {
+    .tarjeta {
+        padding: 16px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
