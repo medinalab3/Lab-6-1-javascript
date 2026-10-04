@@ -60,7 +60,7 @@ ARCHIVOS INCLUIDOS
 
 ENLACE DEL REPOSITORIO DE GITHUB
 ---------------------------------
-https://github.com/medinalab3/laboratorio-javascript
+https://github.com/medinalab3/Lab-6-1-javascript
 
 CÓMO VISUALIZAR Y PROBAR EL PROYECTO
 ---------------------------------------
